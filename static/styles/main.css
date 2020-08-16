@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+nav {
+  width: 100%;
+}
+
+nav li {
+  list-style: none;
+  margin: 0 1.5vw;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+}
+
+nav a:hover {
+  color: #3D3D3D;
+  border-bottom: 2px solid #0074D9;
+  font-weight: 700;
+}
+
+nav .navbar-toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-item {
+    display: none;
+  }
+}
+
+.welcome {
+  padding: 15vh 150px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 1300px;
+  margin: 0 auto;
+  line-height: 2.5;
+}
+
+.welcome > h1, .welcome h2 {
+  font-weight: 300;
+}
+
+.welcome > h2 > .intro-name {
+  font-weight: 700;
+  border-bottom: 4px solid #0074D9;
+}
+
+.welcome > .social-icons {
+  font-size: 3em;
+}
+
+.welcome .fab {
+  padding: 0px .1em 0px .1em;
+}
+
+.welcome .fab:hover {
+  color: #0074D9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .welcome {
+    padding: 5vh;
+    margin: 0 auto;
+    font-size: 0.8em;
+  }
+  .welcome .button {
+    padding: none;
+  }
+}
+
+html, body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: #3D3D3D;
+}
+
+a {
+  text-decoration: none;
+  color: #3D3D3D;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #0074D9;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #0074D9;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  width: 200px;
+}
+
+a.button:hover {
+  color: white;
+  font-weight: 500;
+  background-color: #0074D9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#scrollBtn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  font-size: 3.5em;
+  border-radius: 50%;
+  background: white;
+  color: lightgrey;
+  outline: none;
+  cursor: pointer;
+  opacity: 0;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#scrollBtn:hover {
+  color: #0074D9;
+}
+
+#scrollBtn.active {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  #scrollBtn {
+    font-size: 2em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

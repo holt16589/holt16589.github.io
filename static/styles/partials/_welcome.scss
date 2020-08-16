@@ -1,0 +1,46 @@
+@import "./variables";
+
+.welcome {
+    padding: 15vh 150px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    margin: 0 auto;
+    line-height: 2.5;
+
+    & > h1, h2 {
+        font-weight: 300;
+    }
+
+    & > h2 > .intro-name{
+        font-weight: 700;
+        border-bottom: 4px solid $blue;
+    }
+
+    & > .social-icons{
+        font-size: 3em;
+    }
+
+    & .fab {
+        padding: 0px .1em 0px .1em;
+    }
+
+    & .fab:hover{
+        color: $blue;
+        transition: 0.5s;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .welcome {
+        padding: 5vh;
+        margin: 0 auto;
+        font-size: 0.8em;
+        
+        .button {
+        padding: none;
+        }
+    }
+}

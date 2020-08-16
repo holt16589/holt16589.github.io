@@ -1,0 +1,61 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/320/apple/237/male-technologist-type-1-2_1f468-1f3fb-200d-1f4bb.png">
+  <title>Kevin Holt | Full-Stack Developer</title>
+  <meta name="author" content="Kevin Holt">
+  <script src="https://kit.fontawesome.com/2a22c3b8ba.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./static/styles/main.css">
+
+</head>
+
+<body>
+        <i onclick="scrollToTop()" id="scrollBtn" class="fas fa-chevron-circle-up"></i>
+    <nav>
+<ul>
+    <li class="nav-item"><a href="#">About</a></li>
+    <li class="nav-item"><a href="#">Projects</a></li>
+    <li class="nav-item"><a href="#">Contact</a></li>
+</ul>
+    </nav>
+
+    <div class ="welcome">
+        <h1 class="hello">Hello 🙋🏻‍♂️</h1>
+        <h2 class="intro">I'm <span class="intro-name">Kevin Holt</span>, a full-stack software engineer with a passion for solving challenging problems and building seamless user experiences.</h2>
+        <a href="#" class="button">View Projects</a>
+        <div class="social-icons">
+            <a target="_blank" href="https://github.com/holt16589" ><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/kevinmholt/"><i class="fab fa-linkedin"></i></a>
+           <a target="_blank" href="https://twitter.com/kevinmholt"><i class="fab fa-twitter-square"></i></a>
+        </div>
+    </div>
+
+
+</body>
+
+<script>
+    const scrollBtn = document.getElementById('scrollBtn');
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset > 50){
+            scrollBtn.classList.add("active");
+        }
+        else{
+            scrollBtn.classList.remove("active");
+        }
+    });
+
+const scrollToTop = () => {
+  const c = document.documentElement.scrollTop || document.body.scrollTop;
+  if (c > 0) {
+    window.requestAnimationFrame(scrollToTop);
+    window.scrollTo(0, c - c / 8);
+  }
+};
+
+</script>
+
+</html>
