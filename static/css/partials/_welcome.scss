@@ -1,0 +1,75 @@
+@import "./variables";
+
+.welcome {
+    margin-left: 15vh;
+    padding-top: 10vh;
+    min-height: 100vh;
+    line-height: 2.5;
+
+    & > .button {
+        margin-top: 2em;
+    }
+
+    & > h1, h2 {
+        font-weight: 300;
+        line-height: 2.5;
+    }
+
+    & > h2 > .intro-name{
+        font-weight: 700;
+        border-bottom: 4px solid $blue;
+    }
+
+    & > .social-icons{
+        font-size: 3em;
+    }
+
+    & .fab {
+        padding: 0px .1em 0px .1em;
+    }
+
+    & .fab:hover{
+        color: $blue;
+        transition: 0.5s;
+    }
+
+}
+
+@media only screen and (max-width: 481px) {
+    .welcome {
+        text-align: center;
+        padding: 3vh;
+        padding-top: 0vh;
+        margin: 0 auto;
+        
+        & > h1, h2 {
+            font-weight: 300;
+            line-height: 2.0;
+        }
+
+        .button {
+        padding: none;
+        }
+
+        h1 {
+            font-size: 2.0em;
+        }
+        h2{
+            font-size: 1.5em;
+        }
+
+        & > .social-icons{
+            font-size: 2em;
+        }
+
+        & > .button {
+            margin-top: 1.5em;
+        }
+    }
+}
+
+@media only screen and (max-width: 801px) {
+    .welcome {
+        margin-left: 10vh;
+    }
+}

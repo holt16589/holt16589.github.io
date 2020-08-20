@@ -1,0 +1,27 @@
+@import "./variables";
+
+.about-section{
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 2;
+    font-weight: 300;
+
+    h5{
+        font-weight: 700;
+        padding-bottom: 1em;
+    }
+}
+
+
+#headshot-img{
+    max-width:300px;
+    margin: auto;
+    margin-bottom: 2em;
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    #headshot-img{
+      width: 200px;
+    }
+}

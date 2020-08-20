@@ -1,0 +1,21 @@
+@import "./variables";
+
+#skills{
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.skills-category{
+    .skills-label{
+        padding-top: 1em;
+        padding-bottom: 1em;
+        font-weight: 700;
+        color: black;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-weight: 200;
+    }
+}
