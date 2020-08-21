@@ -46,15 +46,16 @@
             <div class="col-lg-4 col-md-12">
               <img src="./static/assets/headshot.jpg" class="responsive" id="headshot-img">
             </div>
-            <div class="col-lg-8 col-md-12 justify-content-center text-center my-auto">
+            <div class="col-lg-8 col-md-12 my-auto">
               <div>
-              I’m a full-stack software developer currently based in Toronto, Canada. My passion is using technology and my creativity to bring ideas to life. I love tackling the logical challenges that programming presents and constantly learning new things. My journey started at McGill University, where I minored in Computer Science. After starting my career in Marketing, I made the big decision to self-learn web development and make a career transition into software development.
+                <h5>Overview</h5>
+              I’m a full-stack software developer currently based in Toronto, Canada. My passion is using technology and my creativity to bring ideas to life. I love tackling the logical challenges that programming presents and constantly learning new things. My journey started at McGill University, where I minored in Computer Science. After starting my career in Marketing, I made the big decision to self-learn web development and make a career transition into Software.
               </div><br>
               <h5>Some fun facts about myself...</h5>
               <ul style="list-style-type:none;">
                 <li>🇸🇬 Originally from California and grew up overseas in Singapore</li>
-                  <li>🏀 I love playing pickup basketball and I’m also an hardcore NBA fan</li>
-                  <li>👨🏻‍🍳 I’m an budding home chef that constantly experiments with new dishes and cuisines</li>
+                  <li>🏀 I love playing pickup basketball and I’m also an hardcore NBA fan (go Lakers!)</li>
+                  <li>👨🏻‍🍳 I’m a budding home chef that constantly experiments with new dishes and cuisines</li>
                   <li>🎸 Music is a big part of my life - I listen to a wide range of music and you can often find me at live shows
                   </li>
                 </ul>
@@ -62,56 +63,49 @@
           </div>
         </div>
 
-        <div class="row section-title" id="skills">
+        <div class="row section-title" id="skills-icons">
           <h2><span class="title-span">Skills</span></h2>
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-12 skills-category justify-content-center text-center">
-            <div class="skills-label">LANGUAGES</div>
-            <ul>
-              <li>Javascript (ES6)</li>
-              <li>Python</li>
-              <li>Java</li>
-              <li>HTML5</li>
-              <li>CSS/Sass</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-12 skills-category justify-content-center text-center">
-            <div class="skills-label">FRAMEWORKS & LIBRARIES</div>
-            <ul>
-              <li>React/Redux</li>
-              <li>Node</li>
-              <li>Flask</li>
-              <li>Django</li>
-              <li>Bootstrap</li>
-            </ul>
-          </div>
-          <div class="col-lg-4 col-md-12 skills-category  justify-content-center text-center">
-            <div class="skills-label">TOOLS & OTHER</div>
-            <ul>
-              <li>Git</li>
-              <li>PostgreSQL</li>
-              <li>mySQL</li>
-              <li>Heroku</li>
-              <li>Chrome Devtools</li>
-            </ul>
-          </div>
+          <ul class="skill-icon-list">
+            <li><i class="fab fa-js-square"></i><span class="icon-text">Javascript</span></li>
+            <li><i class="fab fa-html5"></i><span class="icon-text">HTML</span></li>
+            <li><i class="fab fa-css3-alt"></i><span class="icon-text">CSS</span></i></li>
+            <li><i class="fab fa-sass"></i></i><span class="icon-text">Sass</span></li>
+            <li><i class="fab fa-react"></i><span class="icon-text">React/Redux</span></li>
+            <li><i class="fab fa-python"></i><span class="icon-text">Python</span></li>
+            <li><i class="fas fa-pepper-hot"></i><span class="icon-text">Flask</span></li>
+            <li><i class="fab fa-python"></i><span class="icon-text">Django</span></li>
+            <li><i class="fab fa-java"></i><span class="icon-text">Java</span></li>
+            <li><i class="fab fa-bootstrap"></i></i><span class="icon-text">Bootstrap</span></li>
+            <li><i class="fab fa-github"></i><span class="icon-text">Git</span></li>
+            <li><i class="fas fa-database"></i><span class="icon-text">PostgreSQL/mySQL</span></li>
+          </ul>
         </div>
 
         <div class="row section-title" id="projects">
           <h2><span class="title-span">Projects</span></h2>
         </div>
 
-      </div>
+      
 
       <div class="row section-title" id="contact">
         <h2><span class="title-span">Contact</span></h2>
       </div>
 
-    </div>
+      <div class="row">
+        <div class="col-12 contact-section justify-content-center text-center">
+        <p><a href="mailto:kevin.m.holt@outlook.com" class="button">Email Me!</a></p>
+        <div class="social-icons">
+          <a target="_blank" href="https://github.com/holt16589"><i class="fab fa-github"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/kevinmholt/"><i class="fab fa-linkedin"></i></a>
+         <a target="_blank" href="https://twitter.com/kevinmholt"><i class="fab fa-twitter-square"></i></a>
+      </div>
+        </div>
+      </div>
 
+</div>
 
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -137,6 +131,10 @@ const scrollToTop = () => {
     window.scrollTo(0, c - c / 8);
   }
 };
+
+window.addEventListener("hashchange", function () {
+    window.scrollTo(window.scrollX, window.scrollY - 50);
+});
 
 </script>
 

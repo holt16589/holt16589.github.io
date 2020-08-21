@@ -2,7 +2,7 @@
 
 .welcome {
     margin-left: 15vh;
-    padding-top: 10vh;
+    padding-top: 15vh;
     min-height: 100vh;
     line-height: 2.5;
 
@@ -33,6 +33,21 @@
         transition: 0.5s;
     }
 
+}
+
+.contact-section{
+    margin-bottom: 2em;
+    & > .social-icons{
+        font-size: 3em;
+    }
+    & .fab {
+        padding: 0px .1em 0px .1em;
+    }
+
+    & .fab:hover{
+        color: $blue;
+        transition: 0.5s;
+    }
 }
 
 @media only screen and (max-width: 481px) {
