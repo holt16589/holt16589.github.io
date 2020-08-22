@@ -38,7 +38,7 @@
 .contact-section{
     margin-bottom: 2em;
     & > .social-icons{
-        font-size: 3em;
+        font-size: 2em;
     }
     & .fab {
         padding: 0px .1em 0px .1em;
@@ -85,6 +85,7 @@
 
 @media only screen and (max-width: 801px) {
     .welcome {
-        margin-left: 10vh;
+        margin: 0;
+        padding-top: 4em;
     }
 }

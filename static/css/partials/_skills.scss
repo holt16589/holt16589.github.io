@@ -27,6 +27,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   height: auto;
+  padding-inline-start: 0;
     li{
         &:hover{
             color: $blue;

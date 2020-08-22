@@ -25,4 +25,17 @@
     #headshot-img{
       width: 200px;
     }
-}
+
+    .about-section{
+        text-align: center;
+        margin: 0;
+
+        ul{
+            padding-inline-start: 0;
+            li{
+                margin-top: 1em;
+            }
+        }
+        
+        }
+    }

@@ -73,7 +73,7 @@ nav .navbar-toggle {
 }
 
 .contact-section > .social-icons {
-  font-size: 3em;
+  font-size: 2em;
 }
 
 .contact-section .fab {
@@ -116,7 +116,8 @@ nav .navbar-toggle {
 
 @media only screen and (max-width: 801px) {
   .welcome {
-    margin-left: 10vh;
+    margin: 0;
+    padding-top: 4em;
   }
 }
 
@@ -143,6 +144,17 @@ nav .navbar-toggle {
 @media only screen and (max-width: 600px) {
   #headshot-img {
     width: 200px;
+  }
+  .about-section {
+    text-align: center;
+    margin: 0;
+  }
+  .about-section ul {
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+  }
+  .about-section ul li {
+    margin-top: 1em;
   }
 }
 
@@ -179,6 +191,8 @@ nav .navbar-toggle {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 .skill-icon-list li {
