@@ -4,38 +4,23 @@ nav {
   margin-top: 1em;
 }
 
-nav li {
-  list-style: none;
-  margin: 0 1.5vw;
-}
-
-nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  float: right;
+nav .button {
+  background: #0074D9;
 }
 
 nav a:hover {
   color: #3D3D3D;
-  border-bottom: 2px solid #0074D9;
   font-weight: 700;
   text-decoration: none;
 }
 
-nav .navbar-toggle {
-  display: none;
-}
-
-@media only screen and (max-width: 600px) {
-  .nav-item {
-    display: none;
-  }
+nav a:hover span {
+  border-bottom: 2px solid #0074D9;
 }
 
 .welcome {
   margin-left: 15vh;
-  padding-top: 15vh;
+  padding-top: 10vh;
   min-height: 100vh;
   line-height: 2.5;
 }
@@ -86,7 +71,7 @@ nav .navbar-toggle {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 768px) {
   .welcome {
     text-align: center;
     padding: 3vh;
@@ -111,13 +96,6 @@ nav .navbar-toggle {
   }
   .welcome > .button {
     margin-top: 1.5em;
-  }
-}
-
-@media only screen and (max-width: 801px) {
-  .welcome {
-    margin: 0;
-    padding-top: 4em;
   }
 }
 
@@ -227,6 +205,76 @@ nav .navbar-toggle {
   color: transparent;
 }
 
+.card {
+  margin-left: 15vw;
+  margin-right: 15vw;
+  margin-bottom: 3em;
+}
+
+.card h5 {
+  font-weight: 600;
+}
+
+.card .skill-box {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #0074D9;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  color: #0074D9;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card .skill-box:hover {
+  color: white;
+  background-color: #0074D9;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card .project-links {
+  margin-top: 0.5em;
+}
+
+.card .project-link {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #0074D9;
+  background: #0074D9;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.card .project-link:hover {
+  opacity: 70%;
+}
+
+.card .project-link .fab, .card .project-link .fas {
+  font-size: 1.2em;
+  padding-left: 0.5em;
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+}
+
 html, body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -307,7 +355,8 @@ a.button:hover {
   }
 }
 
-.test-bg {
-  background: grey;
+footer {
+  text-align: center;
+  margin-bottom: 1em;
 }
 /*# sourceMappingURL=main.css.map */

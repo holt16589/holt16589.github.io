@@ -1,0 +1,62 @@
+@import "./variables";
+
+.card {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-bottom: 3em;
+    h5{
+        font-weight: 600;
+    }
+
+    .skill-box{
+    display: inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid $blue;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:300;
+    color: $blue;
+    text-align:center;
+    transition: all 0.2s;
+        &:hover{
+            color: white;
+            background-color: $blue;
+            transition: 0.5s;
+        }
+    }
+
+    .project-links{
+        margin-top: 0.5em;
+    }
+
+    .project-link{
+    display: inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid $blue;
+    background: $blue;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:500;
+    color: white;
+    text-align:center;
+    transition: all 0.2s;
+    &:hover{
+        opacity: 70%;
+    }
+    .fab,.fas{
+        font-size: 1.2em;
+        padding-left: 0.5em;
+    }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+.card {
+    margin-left: 5vw;
+    margin-right:5vw;
+}
+}

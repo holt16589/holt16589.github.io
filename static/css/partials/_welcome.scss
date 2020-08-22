@@ -2,7 +2,7 @@
 
 .welcome {
     margin-left: 15vh;
-    padding-top: 15vh;
+    padding-top: 10vh;
     min-height: 100vh;
     line-height: 2.5;
 
@@ -50,7 +50,7 @@
     }
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 768px) {
     .welcome {
         text-align: center;
         padding: 3vh;
@@ -80,12 +80,5 @@
         & > .button {
             margin-top: 1.5em;
         }
-    }
-}
-
-@media only screen and (max-width: 801px) {
-    .welcome {
-        margin: 0;
-        padding-top: 4em;
     }
 }

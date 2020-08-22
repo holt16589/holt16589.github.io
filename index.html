@@ -17,13 +17,29 @@
 <i onclick="scrollToTop()" id="scrollBtn" class="fas fa-chevron-circle-up"></i>
 <body>
     <div class="container-fluid">
-        <div class="row"> <nav>
-        <ul>
-            <li class="nav-item"><a href="#about">About</a></li>
-            <li class="nav-item"><a href="#projects">Projects</a></li>
-            <li class="nav-item"><a href="#contact">Contact</a></li>
-        </ul>
-            </nav></div>
+
+            <nav class="navbar-light navbar-expand-lg bg-transparent">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about"><span>About</span></a>
+                  </li>
+          
+                  <li class="nav-item">
+                    <a class="nav-link" href="#projects"><span>Projects</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact"><span>Contact</span></a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+
+
 
                 <div class="row">
                   <div class="col-md-8 col-12 welcome">
@@ -43,10 +59,10 @@
                 </div>
 
         <div class="row about-section">
-            <div class="col-lg-4 col-md-12">
+            <div class="col-xl-4 col-lg-12">
               <img src="./static/assets/headshot.jpg" class="responsive" id="headshot-img">
             </div>
-            <div class="col-lg-8 col-md-12 my-auto">
+            <div class="col-xl-8 col-lg-12 my-auto">
               <div>
                 <h5>Overview</h5>
               I’m a full-stack software developer currently based in Toronto, Canada. My passion is using technology and my creativity to bring ideas to life. I love tackling the logical challenges that programming presents and constantly learning new things. My journey started at McGill University, where I minored in Computer Science. After starting my career in Marketing, I made the big decision to self-learn web development and make a career transition into Software.
@@ -88,6 +104,68 @@
           <h2><span class="title-span">Projects</span></h2>
         </div>
 
+        <div class="row project-list">
+          <div class="col-12">
+
+            <div class="card mb-5">
+              <img src="./static/assets/pinochios.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Pinochio's Pizza</h5>
+                <p class="card-text">A pizza ordering app based on the restaurant with the same name in Cambridge, MA. It allows users to browse the menu, add items to their cart and submit an order. The menu, receipt and confirmation email are all dynamically generated based on the app’s database.
+                </p>
+                <span class="skill-box">Python</span>
+                <span class="skill-box">Django</span>
+                <span class="skill-box">HTML</span>
+                <span class="skill-box">CSS</span>
+                <span class="skill-box">Bootstrap</span>
+                <span class="skill-box">PostgreSQL</span><br>
+                <div class="project-links">
+                  <a target="_blank" href="https://github.com/holt16589/Pinochios"><span class="project-link">View Source <i class="fab fa-github"></i> </span></a>
+                  <a target="_blank" href="https://eatpinochiospizza.herokuapp.com/"><span class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card mb-5">
+              <img src="./static/assets/slacker.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Slacker</h5>
+                <p class="card-text">A single-page, Slack-like chat application where users can chat in public channels and create their own channels. It allows users to send/receive messages, including images and links, in real-time and an alert is generated whenever a new user joins a channel.</p>
+                <span class="skill-box">Javascript (ES6)</span>
+                <span class="skill-box">Python</span>
+                <span class="skill-box">Flask</span>
+                <span class="skill-box">Web Sockets</span>
+                <span class="skill-box">HTML</span>
+                <span class="skill-box">CSS</span>
+                <span class="skill-box">Bootstrap</span>
+                <div class="project-links">
+                  <a target="_blank" href="https://github.com/holt16589/Slacker"><span class="project-link">View Source <i class="fab fa-github"></i> </span></a>
+                  <a target="_blank" href="https://slacker-chat-app.herokuapp.com/"><span class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./static/assets/literarylist.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">LiteraryList</h5>
+                <p class="card-text">A web application that allows users to create an account, search for books and write reviews. SQL queries are used to query the database when a user searches and routing is used to dynamically generate pages for each book. The app also uses the GoodReads and OpenBooks API, while also featuring an API endpoint of it's own.</p>
+                <span class="skill-box">Python</span>
+                <span class="skill-box">Flask</span>
+                <span class="skill-box">HTML</span>
+                <span class="skill-box">CSS</span>
+                <span class="skill-box">Bootstrap</span>
+                <span class="skill-box">PostgreSQL</span>
+                <div class="project-links">
+                  <a target="_blank" href="https://github.com/holt16589/LiteraryList"><span class="project-link">View Source <i class="fab fa-github"></i> </span></a>
+                  <a target="_blank" href="https://theliterarylist.herokuapp.com/"><span class="project-link">Live Demo <i class="fas fa-external-link-alt"></i></span></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
       
 
       <div class="row section-title" id="contact">
@@ -104,6 +182,10 @@
       </div>
         </div>
       </div>
+
+      <footer>
+        Made by Kevin Holt © 2020
+      </footer>
 
 </div>
 
