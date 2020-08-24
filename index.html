@@ -50,7 +50,8 @@
             <a target="_blank" href="https://github.com/holt16589"><i class="fab fa-github"></i></a>
             <a target="_blank" href="https://www.linkedin.com/in/kevinmholt/"><i class="fab fa-linkedin"></i></a>
            <a target="_blank" href="https://twitter.com/kevinmholt"><i class="fab fa-twitter-square"></i></a>
-        </div>
+           <a target="_blank" href="https://open.spotify.com/user/1185826660?si=CubAAiTRQmKZeD3d6coR3Q"><i class="fab fa-spotify"></i></a>
+          </div>
                   </div>
                 </div> 
   </section>
@@ -68,12 +69,13 @@
             <div class="col-xl-8 col-lg-12 my-auto">
               <div>
                 <h5>Overview</h5>
-              I’m a full-stack software developer currently based in Toronto, Canada. My passion is using technology and my creativity to bring ideas to life. I love tackling the logical challenges that programming presents and constantly learning new things. My journey started at McGill University, where I minored in Computer Science. After starting my career in Marketing, I made the big decision to self-learn web development and make a career transition into Software.
+              I’m a full-stack software developer currently based in Toronto, Canada. My passion is using technology and my creativity to bring ideas to life. I love tackling the logical challenges that programming presents and constantly learning new things. My journey started at McGill University, where I minored in Computer Science. 
+              After starting my career in Marketing, I made the big decision to self-learn web development and make a career transition into Software. I'm also currently working to complete a Certificate of Data Science at the University of Waterloo.
               </div><br>
               <h5>Some fun facts about myself...</h5>
               <ul style="list-style-type:none;">
                 <li>
-                    <span id="music-emoji">🎵 </span><span id="listening-intro"></span><span id="listening-song-name"></span> by <span id="listening-song-artist"></span><span id="listening-end"></span>
+                    <span id="music-emoji">🎵 </span><span id="listening-intro"></span><span id="listening-song-name"></span><span id="listening-by"></span><span id="listening-song-artist"></span><span id="listening-end"></span>
                   </li>
                   <li>🎸 Music is a big part of my life - I listen to a wide range of music and love going to live shows. I play bass guitar and also founded a music magazine at McGill called 
                     <a target="_blank" href="https://counterpoint.ssmu.ca/"><span class="link-style">Counterpoint</span></a>. 
@@ -173,6 +175,18 @@
               </div>
             </div>
 
+            <div class="card">
+              <img src="./static/assets/counterpoint.jpeg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Counterpoint</h5>
+                <p class="card-text">A music magazine and student club that I founded as an undergraduate at McGill University. This was one of my proudest achievements and I had the opportunity to work with brilliant writers, editors and designers! This provided an opportunity to challenge my creative side and play a leadership role in the creation of a written publication.</p>
+                <div class="project-links">
+                  <a target="_blank" href="https://drive.google.com/file/d/0B0QpZN8Sh8xhbjc5WnF5emcwc1U/view?pref=2&pli=1"><span class="project-link">View Issue 2 <i class="fas fa-external-link-alt"></i></a>
+                  <a target="_blank" href="https://counterpoint.ssmu.ca"><span class="project-link">Website <i class="fas fa-external-link-alt"></i></span></a>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
@@ -252,7 +266,8 @@ fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=holt1
               }
               document.getElementById("listening-intro").textContent= listeningIntro;
               document.getElementById("listening-song-name").textContent= latestTrack.name;
-              document.getElementById("listening-song-artist").textContent= latestTrack.artist['#text'];
+              document.getElementById("listening-song-artist").textContent= ' by ' + latestTrack.artist['#text'];
+              document.getElementById("listening-by").textContent= ' by ';
               document.getElementById("listening-end").textContent= listeningEnd;
             })
             .catch(function (err) {
