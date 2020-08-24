@@ -231,7 +231,8 @@ window.addEventListener("hashchange", function () {
     window.scrollTo(window.scrollX, window.scrollY - 50);
 });
 
-fetch('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=holt16589&api_key=3189b9fa553d5ca411215454686eca9b&format=json')
+//fetch recently listened tracks from last.fm API
+fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=holt16589&api_key=3189b9fa553d5ca411215454686eca9b&format=json')
             .then(function (response) {
                 return response.json();
             })
