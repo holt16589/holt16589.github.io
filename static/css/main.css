@@ -18,6 +18,11 @@ nav a:hover span {
   border-bottom: 2px solid #0074D9;
 }
 
+.link-style {
+  color: #0074D9;
+  font-weight: 600;
+}
+
 .welcome {
   margin-left: 15vh;
   padding-top: 10vh;
@@ -117,6 +122,11 @@ nav a:hover span {
   margin: auto;
   margin-bottom: 2em;
   display: block;
+}
+
+#listening-song-name, #listening-song-artist {
+  font-weight: 600;
+  border-bottom: 1px solid #0074D9;
 }
 
 @media only screen and (max-width: 600px) {
@@ -326,6 +336,7 @@ a.button:hover {
   opacity: 0;
   -webkit-transition: .5s;
   transition: .5s;
+  z-index: 50;
 }
 
 #scrollBtn:hover {

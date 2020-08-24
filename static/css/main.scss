@@ -49,9 +49,10 @@ a.button{
       background: white;
       color: lightgrey;
       outline: none;
-      cursor:pointer;
+      cursor: pointer;
       opacity: 0;
       transition: .5s;
+      z-index: 50;
       
       &:hover{
         color: $blue;

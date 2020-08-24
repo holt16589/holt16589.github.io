@@ -39,8 +39,7 @@
               </div>
             </nav>
 
-
-
+<section>
                 <div class="row">
                   <div class="col-md-8 col-12 welcome">
                     <h1 class="hello">Hello 🙋🏻‍♂️</h1>
@@ -53,13 +52,16 @@
         </div>
                   </div>
                 </div> 
+  </section>
+                
+              
 
-                <div class="row section-title" id="about">
+        <section>
+          <div class="row section-title" id="about">
                   <h2><span class="title-span">About</span></h2>
                 </div>
-
         <div class="row about-section">
-            <div class="col-xl-4 col-lg-12">
+            <div class="col-xl-4 col-lg-12 my-auto">
               <img src="./static/assets/headshot.jpg" class="responsive" id="headshot-img">
             </div>
             <div class="col-xl-8 col-lg-12 my-auto">
@@ -69,16 +71,21 @@
               </div><br>
               <h5>Some fun facts about myself...</h5>
               <ul style="list-style-type:none;">
-                <li>🇸🇬 Originally from California and grew up overseas in Singapore</li>
-                  <li>🏀 I love playing pickup basketball and I’m also an hardcore NBA fan (go Lakers!)</li>
-                  <li>👨🏻‍🍳 I’m a budding home chef that constantly experiments with new dishes and cuisines</li>
-                  <li>🎸 Music is a big part of my life - I listen to a wide range of music and you can often find me at live shows
+                <li>
+                    <span id="music-emoji">🎵 </span><span id="listening-intro"></span><span id="listening-song-name"></span> by <span id="listening-song-artist"></span><span id="listening-end"></span>
                   </li>
+                  <li>🎸 Music is a big part of my life - I listen to a wide range of music and love going to live shows. I play bass guitar and also founded a music magazine at McGill called 
+                    <a target="_blank" href="https://counterpoint.ssmu.ca/"><span class="link-style">Counterpoint</span></a>. 
+                  </li>
+                  <li>🇸🇬 Originally from California and grew up overseas in Singapore.</li>
+                  <li>🏀 I’m a hardcore NBA/Lakers fan and I also love playing pickup basketball.</li>
+                  <li>👨🏻‍🍳 I’m a budding home chef that constantly experiments with new dishes and cuisines.</li>
                 </ul>
-
           </div>
         </div>
+      </section>
 
+      <section>
         <div class="row section-title" id="skills-icons">
           <h2><span class="title-span">Skills</span></h2>
         </div>
@@ -89,7 +96,7 @@
             <li><i class="fab fa-html5"></i><span class="icon-text">HTML</span></li>
             <li><i class="fab fa-css3-alt"></i><span class="icon-text">CSS</span></i></li>
             <li><i class="fab fa-sass"></i></i><span class="icon-text">Sass</span></li>
-            <li><i class="fab fa-react"></i><span class="icon-text">React/Redux</span></li>
+            <li><i class="fab fa-react"></i><span class="icon-text">React</span></li>
             <li><i class="fab fa-python"></i><span class="icon-text">Python</span></li>
             <li><i class="fas fa-pepper-hot"></i><span class="icon-text">Flask</span></li>
             <li><i class="fab fa-python"></i><span class="icon-text">Django</span></li>
@@ -99,7 +106,9 @@
             <li><i class="fas fa-database"></i><span class="icon-text">PostgreSQL/mySQL</span></li>
           </ul>
         </div>
+      </section>
 
+        <section>
         <div class="row section-title" id="projects">
           <h2><span class="title-span">Projects</span></h2>
         </div>
@@ -165,26 +174,28 @@
 
           </div>
         </div>
+      </section>
 
-      
-
+      <section>
       <div class="row section-title" id="contact">
         <h2><span class="title-span">Contact</span></h2>
       </div>
 
       <div class="row">
         <div class="col-12 contact-section justify-content-center text-center">
-        <p><a href="mailto:kevin.m.holt@outlook.com" class="button">Email Me!</a></p>
+        <p><a href="mailto:kevin.m.holt@outlook.com" class="button">Get in Touch!</a></p>
         <div class="social-icons">
           <a target="_blank" href="https://github.com/holt16589"><i class="fab fa-github"></i></a>
           <a target="_blank" href="https://www.linkedin.com/in/kevinmholt/"><i class="fab fa-linkedin"></i></a>
          <a target="_blank" href="https://twitter.com/kevinmholt"><i class="fab fa-twitter-square"></i></a>
+         <a target="_blank" href="https://open.spotify.com/user/1185826660?si=CubAAiTRQmKZeD3d6coR3Q"><i class="fab fa-spotify"></i></a>
       </div>
         </div>
       </div>
-
+    </section>
+    
       <footer>
-        Made by Kevin Holt © 2020
+        Made by Kevin Holt 🔥 2020
       </footer>
 
 </div>
@@ -193,9 +204,9 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</body>
 
 <script>
+//  Show scroll to top button if the user has scrolled, otherwise hide
     const scrollBtn = document.getElementById('scrollBtn');
     window.addEventListener('scroll', () => {
         if(window.pageYOffset > 50){
@@ -206,6 +217,7 @@
         }
     });
 
+//Scroll to top of the page when scroll button is clicked
 const scrollToTop = () => {
   const c = document.documentElement.scrollTop || document.body.scrollTop;
   if (c > 0) {
@@ -214,10 +226,96 @@ const scrollToTop = () => {
   }
 };
 
+// Add padding when clicking section nav links
 window.addEventListener("hashchange", function () {
     window.scrollTo(window.scrollX, window.scrollY - 50);
 });
 
-</script>
+fetch('http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=holt16589&api_key=3189b9fa553d5ca411215454686eca9b&format=json')
+            .then(function (response) {
+                return response.json();
+            })
+            .then(function (data) {
+              const latestTrack = data.recenttracks.track[0];
+              const currentlyListening = latestTrack['@attr'] && latestTrack['@attr'].nowplaying;
+              let listeningIntro = '';
+              if(currentlyListening){
+                listeningIntro = 'I\'m currently listening to ';
+                listeningEnd= '.';
+              }
+              else{
+                const time = timeSince(latestTrack.date.uts);
+                listeningIntro = 'I recently listened to ';
+                listeningEnd = ' ' + time + ' ago.';
+              }
+              document.getElementById("listening-intro").textContent= listeningIntro;
+              document.getElementById("listening-song-name").textContent= latestTrack.name;
+              document.getElementById("listening-song-artist").textContent= latestTrack.artist['#text'];
+              document.getElementById("listening-end").textContent= listeningEnd;
+            })
+            .catch(function (err) {
+                console.log('error: ' + err);
+                document.getElementById("music-emoji").textContent= '';
+            });
+
+//https://stackoverflow.com/questions/3177836/how-to-format-time-since-xxx-e-g-4-minutes-ago-similar-to-stack-exchange-site/
+function timeSince(date) {
+
+  var seconds = Math.floor((new Date()) / 1000 - date);
+  var interval = seconds / 31536000;
+
+  if (interval > 1) {
+    if(Math.floor(interval) == 1){
+      return Math.floor(interval) + " year";
+    }
+    else{
+      return Math.floor(interval) + " years";
+    }
+  }
+  interval = seconds / 2592000;
+  if (interval > 1) {
+    if(Math.floor(interval) == 1){
+      return Math.floor(interval) + " month";
+    }
+    else{
+      return Math.floor(interval) + " months";
+    }
+  }
+  interval = seconds / 86400;
+  if (interval > 1) {
+    if(Math.floor(interval) == 1){
+      return Math.floor(interval) + " day";
+    }
+    else{
+      return Math.floor(interval) + " days";
+    }
+  }
+  interval = seconds / 3600;
+  if (interval > 1) {
+    if(Math.floor(interval) == 1){
+      return Math.floor(interval) + " hour";
+    }
+    else{
+      return Math.floor(interval) + " hours";
+    }
+  }
+  interval = seconds / 60;
+  if (interval > 1) {
+    if(Math.floor(interval) == 1){
+      return Math.floor(interval) + " minute";
+    }
+    else{
+      return Math.floor(interval) + " minutes";
+    }
+  }
+  if(Math.floor(interval) == 1){
+      return Math.floor(interval) + " second";
+    }
+    else{
+      return Math.floor(interval) + " seconds";
+    }
+  }
+    </script>
+</body>
 
 </html>

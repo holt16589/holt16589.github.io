@@ -21,6 +21,11 @@
     display: block;
 }
 
+#listening-song-name, #listening-song-artist{
+    font-weight: 600;
+    border-bottom: 1px solid $blue;
+}
+
 @media only screen and (max-width: 600px) {
     #headshot-img{
       width: 200px;
