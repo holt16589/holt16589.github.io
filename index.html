@@ -267,7 +267,7 @@ fetch('https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=holt1
               }
               document.getElementById("listening-intro").textContent= listeningIntro;
               document.getElementById("listening-song-name").textContent= latestTrack.name;
-              document.getElementById("listening-song-artist").textContent= ' by ' + latestTrack.artist['#text'];
+              document.getElementById("listening-song-artist").textContent= latestTrack.artist['#text'];
               document.getElementById("listening-by").textContent= ' by ';
               document.getElementById("listening-end").textContent= listeningEnd;
             })
