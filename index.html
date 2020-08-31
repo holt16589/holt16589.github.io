@@ -16,6 +16,8 @@
 
 </head>
 <i onclick="scrollToTop()" id="scrollBtn" class="fas fa-chevron-circle-up"></i>
+<i id="scrollDown" class="fas fa-chevron-down active"></i>
+
 <body>
     <div class="container-fluid">
 
@@ -230,6 +232,17 @@
         }
         else{
             scrollBtn.classList.remove("active");
+        }
+    });
+
+    // Show down arrow if scrolled to top
+    const scrollDown = document.getElementById('scrollDown');
+    window.addEventListener('scroll', () => {
+        if(window.pageYOffset == 0){
+            scrollDown.classList.add("active");
+        }
+        else{
+            scrollDown.classList.remove("active");
         }
     });
 

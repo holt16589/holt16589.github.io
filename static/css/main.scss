@@ -84,3 +84,34 @@ footer{
   text-align: center;
   margin-bottom: 2em;
 }
+
+#scrollDown{
+  position: fixed;
+  z-index: 50;
+  left: 50%;
+  bottom: 20px;
+  font-size: 2em;
+  color: $font-grey;
+  opacity: 0;
+  transition: .5s;
+
+  &.active{
+    opacity: .8;
+      animation: hvr-icon-down 2.5s linear infinite;
+  }
+
+}
+
+@keyframes hvr-icon-down {
+  0%,
+    50%,
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  25%,
+    75% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+  }
+}
