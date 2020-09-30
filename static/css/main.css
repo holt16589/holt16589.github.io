@@ -25,7 +25,7 @@ nav a:hover span {
 
 .welcome {
   margin-left: 15vh;
-  padding-top: 10vh;
+  padding-top: 7vh;
   min-height: 100vh;
   line-height: 2.5;
 }
@@ -100,7 +100,7 @@ nav a:hover span {
     text-align: center;
     padding: 3vh;
     padding-top: 0vh;
-    margin: 0 auto;
+    margin: 7vh auto 0;
   }
   .welcome > h1, .welcome h2 {
     font-weight: 300;
@@ -302,6 +302,9 @@ nav a:hover span {
     margin-left: 5vw;
     margin-right: 5vw;
   }
+  .card-body {
+    text-align: center;
+  }
 }
 
 html, body {
@@ -382,6 +385,9 @@ a.button:hover {
 @media only screen and (max-width: 600px) {
   #scrollBtn {
     font-size: 2em;
+  }
+  #about {
+    margin-top: 0em;
   }
 }
 
