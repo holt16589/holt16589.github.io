@@ -244,6 +244,11 @@ nav a:hover span {
   font-weight: 600;
 }
 
+.card .card-img-top:hover {
+  cursor: pointer;
+  opacity: 60%;
+}
+
 .card .skill-box {
   display: inline-block;
   padding: 0.35em 1.2em;
@@ -313,6 +318,17 @@ html, body {
   font-family: "Open Sans", sans-serif;
   color: #3D3D3D;
   overflow-X: hidden;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
 }
 
 a {

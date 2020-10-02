@@ -11,6 +11,12 @@ html, body {
     font-family: $font-style;
     color: $font-grey;
     overflow-X: hidden;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
   }
 
 a {
@@ -72,6 +78,7 @@ a.button{
        justify-content: center;
        margin-top: 7em;
        margin-bottom: 3em;
+       
      }
 
     @media only screen and (max-width: 600px) {
